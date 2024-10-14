@@ -1,0 +1,76 @@
+.carousel {
+  position: relative;
+  width: 100%;
+  max-width: 100%; /* Tamanho máximo do carrossel */
+  margin: auto; /* Centraliza o carrossel */
+  overflow: hidden; /* Oculta as imagens que estão fora da vista */
+  background-color: #000000;
+  margin-bottom: 2px;
+}
+
+.carousel-item {
+  display: none; /* Oculta todos os itens por padrão */
+}
+
+.carousel-item.active {
+  display: block; /* Exibe o item ativo */
+}
+
+.carousel-image {
+  width: 100%; /* Imagem ocupa toda a largura do carrossel */
+  height: auto; /* Mantém a proporção da imagem */
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.7);
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 1;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+.image-text-container {
+  display: flex; /* Ativa o layout flexbox */
+  align-items: center;
+  justify-content: center;
+  padding: 20px; /* Adiciona preenchimento */
+  background-color: #000000; /* Cor de fundo */
+  margin-bottom: 2px;
+}
+
+.image {
+  width: 400px; /* Define a largura da imagem */
+  height: auto; /* Mantém a proporção da imagem */
+  margin-right: 20px; /* Espaço entre a imagem e o texto */
+}
+
+.text-container {
+  max-width: 50%;
+  width:20%;
+  height:30%;
+  background-color:#ffffff;
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px #737373;
+  text-align: center;
+  padding: 15px;
+  position: absolute;
+  left: 55%;
+}
+h2 {
+  margin: 0; /* Remove a margem do título */
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+p{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 20px;
+}

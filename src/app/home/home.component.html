@@ -1,0 +1,19 @@
+<div class="carousel" id="home">
+  <div class="carousel-item" *ngFor="let image of images; let i = index" [ngClass]="{'active': i === currentIndex}">
+    <img [src]="image" alt="Carrossel de Imagens" class="carousel-image">
+  </div>
+
+  <button class="prev" (click)="prev()">&#10094;</button>
+  <button class="next" (click)="next()">&#10095;</button>
+</div>
+<!-- <div class="image-text-container">
+  <img src="bannerImage.jpg" alt="Descrição da Imagem" class="image" />
+  <div class="text-container">
+    <h2>Quem somos</h2>
+    <br/>
+    <p>
+      Akbar Hookah Tabacaria vem com o objetivo de oferecer uma praticidade e rapidez nas entregas de nossos pedidos.
+      Estamos comprometidos em proporcionar experiências únicas e memoráveis a cada pedido.
+    </p>
+  </div>
+</div> -->

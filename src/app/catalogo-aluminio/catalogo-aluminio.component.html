@@ -1,0 +1,11 @@
+<div class="product-catalog" id="catalog-aluminio">
+  <h4>Alumínio</h4>
+  <div class="product-list">
+    <div class="product-card" *ngFor="let aluminio of aluminio">
+      <img [src]="aluminio.imageUrl" alt="{{ aluminio.name }}" class="product-image" />
+      <p>{{ aluminio.name }}</p>
+      <p>R$ {{ aluminio.price.toFixed(2) }}</p>
+      <a class="buy-button" href="https://api.whatsapp.com/send?phone=5511997630847&text=Ola,%20gostaria%20de%20realizar%20pedido%20de%20aluminio">Comprar</a>
+    </div>
+  </div>
+</div>

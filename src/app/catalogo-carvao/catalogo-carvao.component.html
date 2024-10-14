@@ -1,0 +1,11 @@
+<div class="product-catalog" id="catalog-carvao">
+  <h4>Carvão</h4>
+  <div class="product-list">
+    <div class="product-card" *ngFor="let carvao of carvao">
+      <img [src]="carvao.imageUrl" alt="{{ carvao.name }}" class="product-image" />
+      <p>{{ carvao.name }}</p>
+      <p>R$ {{ carvao.price.toFixed(2) }}</p>
+      <a class="buy-button" target="_blank" href="https://api.whatsapp.com/send?phone=5511997630847&text=Ola,%20gostaria%20de%20realizar%20pedido%20de%20carvão">Comprar</a>
+    </div>
+  </div>
+</div>

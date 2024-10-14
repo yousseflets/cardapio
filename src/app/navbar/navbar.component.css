@@ -1,0 +1,23 @@
+.spacer {
+  flex: 1 1 auto;
+}
+.logo {
+  height: 60px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+.navbar{
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: white;
+  z-index: 1000;
+  padding: 10px 20px;
+  transition: background-color 0.3s;
+  margin-bottom: 2px;
+}
+.font{
+  font-size: medium;
+}

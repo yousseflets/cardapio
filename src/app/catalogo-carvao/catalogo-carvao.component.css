@@ -1,0 +1,50 @@
+.product-catalog {
+  padding: 20px;
+  text-align: center;
+  background-color: #000;
+  color: #fff;
+  margin-bottom: 2px;
+}
+
+.product-list {
+  display: flex; /* Usamos flexbox para organizar os produtos */
+  flex-wrap: wrap; /* Permite que os itens se movam para a próxima linha se não houver espaço */
+  justify-content: center; /* Centraliza os itens */
+}
+
+.product-card {
+  border: 1px solid #ccc; /* Borda dos cartões de produtos */
+  border-radius: 8px; /* Cantos arredondados */
+  padding: 10px;
+  margin: 10px;
+  width: 150px; /* Largura fixa dos cartões */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra */
+  transition: transform 0.2s; /* Transição suave para efeitos */
+}
+
+.product-card:hover {
+  transform: scale(1.05); /* Efeito de aumento ao passar o mouse */
+}
+
+.product-image {
+  width: 100%; /* Imagem ocupa toda a largura do cartão */
+  height: 50%; /* Mantém a proporção da imagem */
+}
+
+.buy-button {
+  background-color: #28a745; /* Cor do botão */
+  color: white; /* Cor do texto */
+  border: none; /* Remove bordas */
+  padding: 10px;
+  border-radius: 5px; /* Cantos arredondados */
+  cursor: pointer; /* Cursor de mão ao passar sobre o botão */
+  text-decoration: none;
+}
+
+.buy-button:hover {
+  background-color: #218838; /* Cor mais escura ao passar o mouse */
+}
+h4{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 55px;
+}

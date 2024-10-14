@@ -1,0 +1,11 @@
+<div class="product-catalog" id="catalog-fogareiro">
+  <h4>Fogareiro</h4>
+  <div class="product-list">
+    <div class="product-card" *ngFor="let fogareiro of fogareiro">
+      <img [src]="fogareiro.imageUrl" alt="{{ fogareiro.name }}" class="product-image" />
+      <p>{{ fogareiro.name }}</p>
+      <p>R$ {{ fogareiro.price.toFixed(2) }}</p>
+      <a class="buy-button" target="_blank" href="https://api.whatsapp.com/send?phone=5511997630847&text=Ola,%20gostaria%20de%20realizar%20pedido%20de%20fogareiro">Comprar</a>
+    </div>
+  </div>
+</div>
