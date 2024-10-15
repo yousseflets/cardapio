@@ -1,4 +1,4 @@
-<mat-toolbar class="navbar" >
+<!-- <mat-toolbar class="navbar" >
   <a routerLink="/"><img src="logo.png" alt="Logo Akbar Hookah" class="logo" routerLink="/"></a>
   <span class="spacer"></span>
   <button class="font" mat-button (click)="scrollToHome()">Home</button>
@@ -7,4 +7,33 @@
   <button class="font" mat-button (click)="scrollTogCarvao()">Carvão</button>
   <button class="font" mat-button (click)="scrollTogAluminio()">Alumínio</button>
   <button class="font" mat-button (click)="scrollTogFogareiro()">Fogareiro</button>
+</mat-toolbar> -->
+<mat-toolbar class="navbar">
+  <a routerLink="/"><img src="logo.png" alt="Logo Akbar Hookah" class="logo" routerLink="/"></a>
+  <span class="spacer"></span>
+
+  <!-- Botão de menu para telas menores -->
+  <button mat-icon-button (click)="toggleMenu()" class="menu-toggle" aria-label="Menu">
+    <mat-icon>menu</mat-icon>
+  </button>
+
+  <!-- Menu para telas grandes -->
+  <div class="desktop-menu">
+    <button class="font" mat-button (click)="scrollToHome()">Home</button>
+    <button class="font" mat-button (click)="scrollToPods()">Pods Descartáveis</button>
+    <button class="font" mat-button (click)="scrollTogEssencias()">Essências</button>
+    <button class="font" mat-button (click)="scrollTogCarvao()">Carvão</button>
+    <button class="font" mat-button (click)="scrollTogAluminio()">Alumínio</button>
+    <button class="font" mat-button (click)="scrollTogFogareiro()">Fogareiro</button>
+  </div>
+
+  <!-- Menu para telas pequenas -->
+  <div class="mobile-menu" [ngClass]="{'active': isMenuOpen}">
+    <button class="font" mat-button (click)="scrollToHome()">Home</button>
+    <button class="font" mat-button (click)="scrollToPods()">Pods Descartáveis</button>
+    <button class="font" mat-button (click)="scrollTogEssencias()">Essências</button>
+    <button class="font" mat-button (click)="scrollTogCarvao()">Carvão</button>
+    <button class="font" mat-button (click)="scrollTogAluminio()">Alumínio</button>
+    <button class="font" mat-button (click)="scrollTogFogareiro()">Fogareiro</button>
+  </div>
 </mat-toolbar>

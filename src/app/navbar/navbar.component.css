@@ -1,4 +1,4 @@
-.spacer {
+/* .spacer {
   flex: 1 1 auto;
 }
 .logo {
@@ -20,4 +20,70 @@
 }
 .font{
   font-size: medium;
+} */
+.navbar {
+  display: flex;
+  align-items: center;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: white;
+  z-index: 1000;
+  padding: 10px 20px;
+  transition: background-color 0.3s;
+  margin-bottom: 2px;
+}
+
+.logo {
+  height: 60px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+.spacer {
+  flex: 1;
+}
+
+.desktop-menu {
+  display: flex;
+}
+
+.mobile-menu {
+  display: none; /* Escondido por padrão */
+  flex-direction: column;
+  position: absolute;
+  top: 64px; /* Ajuste conforme necessário */
+  left: 0;
+  right: 0;
+  background-color: white; /* Ajuste a cor conforme necessário */
+  z-index: 10;
+}
+
+.mobile-menu.active {
+  display: flex; /* Exibido quando ativo */
+}
+
+.menu-toggle {
+  display: none; /* Escondido por padrão */
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  .desktop-menu {
+    display: none; /* Escondido em telas pequenas */
+  }
+
+  .mobile-menu {
+    display: none; /* Escondido por padrão */
+  }
+
+  .mobile-menu.active {
+    display: flex; /* Exibido quando ativo */
+  }
+
+  .menu-toggle {
+    display: block; /* Exibido em telas pequenas */
+  }
 }
